@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive SaaS pricing cards with a Monthly/Yearly billing toggle, hover effects and badge ribbons.">
+  <title>Pricing Cards | Project 03</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <p class="eyebrow">Project 03</p>
+      <h1>Simple, transparent pricing</h1>
+      <p class="subtitle">Pick a plan that fits you. Switch to yearly billing and save 20%.</p>
+
+      <div class="billing-toggle" role="group" aria-label="Billing cycle">
+        <span class="toggle-label is-active" id="label-monthly">Monthly</span>
+        <button id="billing-switch" class="switch" type="button" role="switch" aria-checked="false" aria-label="Switch between monthly and yearly billing">
+          <span class="switch-knob"></span>
+        </button>
+        <span class="toggle-label" id="label-yearly">Yearly <small class="save-pill">Save 20%</small></span>
+      </div>
+    </header>
+
+    <section class="cards" aria-label="Pricing plans">
+      <article class="card">
+        <h2 class="plan-name">Starter</h2>
+        <p class="plan-desc">For individuals just getting started.</p>
+        <p class="price"><span class="currency">$</span><span class="amount" data-monthly="9" data-yearly="86">9</span><span class="period">/month</span></p>
+        <p class="billed-note" data-monthly="Billed monthly" data-yearly="Billed $86 yearly">Billed monthly</p>
+        <ul class="features">
+          <li>1 project</li>
+          <li>Basic analytics</li>
+          <li>Community support</li>
+          <li>1 GB storage</li>
+        </ul>
+        <button class="btn btn-outline" type="button">Choose Starter</button>
+      </article>
+
+      <article class="card card-featured">
+        <span class="ribbon">Popular</span>
+        <h2 class="plan-name">Pro</h2>
+        <p class="plan-desc">For growing teams that need more power.</p>
+        <p class="price"><span class="currency">$</span><span class="amount" data-monthly="29" data-yearly="278">29</span><span class="period">/month</span></p>
+        <p class="billed-note" data-monthly="Billed monthly" data-yearly="Billed $278 yearly">Billed monthly</p>
+        <ul class="features">
+          <li>10 projects</li>
+          <li>Advanced analytics</li>
+          <li>Priority email support</li>
+          <li>20 GB storage</li>
+        </ul>
+        <button class="btn btn-primary" type="button">Choose Pro</button>
+      </article>
+
+      <article class="card">
+        <span class="ribbon ribbon-value">Best Value</span>
+        <h2 class="plan-name">Business</h2>
+        <p class="plan-desc">For companies that want everything.</p>
+        <p class="price"><span class="currency">$</span><span class="amount" data-monthly="79" data-yearly="758">79</span><span class="period">/month</span></p>
+        <p class="billed-note" data-monthly="Billed monthly" data-yearly="Billed $758 yearly">Billed monthly</p>
+        <ul class="features">
+          <li>Unlimited projects</li>
+          <li>Custom reports</li>
+          <li>24/7 phone support</li>
+          <li>100 GB storage</li>
+        </ul>
+        <button class="btn btn-outline" type="button">Choose Business</button>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
